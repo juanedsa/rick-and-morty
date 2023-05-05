@@ -1,11 +1,8 @@
 .app-container {
   display: grid;
-
   grid-template-columns: 1fr;
-
-  @media (min-width: 576px) and (max-width: 767px) {
-    grid-template-columns: 100px 1fr 100px;
-  }
+  grid-gap: 20px;
+  height: 100%;
 
   @media (min-width: 768px) {
     grid-template-columns: 200px 1fr 200px;

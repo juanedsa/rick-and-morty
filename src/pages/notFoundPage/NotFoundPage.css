@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__title {
+  font-size: 28px;
+
+  @media (min-width: 768px) {
+    font-size: 34px;
+  }
+}
+
+.error__image {
+  max-width: 200px;
+
+
+
+
+  @media (min-width: 768px) {
+    max-width: 300px;
+  }
+}
