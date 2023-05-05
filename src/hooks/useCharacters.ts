@@ -6,9 +6,11 @@ import useApiData from './useApiData'
 
 function useCharacters(page: number) {
   const [characters, setCharacters] = useState([])
-  const [info, setInfo] = useState<InfoModel>({ prev: '', next: '' })
+  const [info, setInfo] = useState<InfoModel>({ prev: '', next: '', pages: 0 })
 
-  const url = `${API}/character/?page=${page}`
+  const name = 'rick'
+
+  const url = `${API}/character/?page=${page}&name=${name}`
 
   const { data, isLoading, error } = useApiData(url)
 
