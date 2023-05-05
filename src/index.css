@@ -1,3 +1,14 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  background-color: black;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
