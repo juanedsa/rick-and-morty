@@ -1,0 +1,9 @@
+.character-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1240px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

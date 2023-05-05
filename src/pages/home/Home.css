@@ -1,0 +1,14 @@
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons__paginator {
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #87f54e;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin: 12px 0;
+  cursor: pointer;
+}

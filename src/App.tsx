@@ -2,14 +2,15 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
 
-import { HomePage } from './pages/HomePage'
-import { DetailPage } from './pages/DetailPage'
-import { NotFoundPage } from './pages/notFoundPage/NotFoundPage'
+import { HomePage } from './pages/home/HomePage'
+import { DetailPage } from './pages/detail/DetailPage'
+import { NotFoundPage } from './pages/notFound/NotFoundPage'
+import { Header } from './shared/components/Header'
 
 function App() {
   return (
     <main className="app-container">
-      <section></section>
+        <Header />
       <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -17,7 +18,6 @@ function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </HashRouter>
-      <section></section>
     </main>
   )
 }
