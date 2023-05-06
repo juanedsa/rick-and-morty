@@ -19,7 +19,7 @@ function Character({
 }: CharacterProps) {
   return (
     <article key={id} className="character">
-      <img src={image} alt={`image of ${name}`} />
+      <img className="character__image" src={image} alt={`image of ${name}`} />
       <div className="character__info">
         <span className="info__name">{name}</span>
         <span>

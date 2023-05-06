@@ -10,7 +10,7 @@ function useCharacters(page: number, name: string) {
 
   const url = `${API}/character/?page=${page}&name=${name}`
 
-  const { data, isLoading, error } = useApiData(url)
+  const { data, isLoading } = useApiData(url)
 
   useEffect(() => {
     if (data) {
@@ -22,7 +22,7 @@ function useCharacters(page: number, name: string) {
     }
   }, [data])
 
-  return { characters, info, isLoading, error }
+  return { characters, info, isLoading }
 }
 
 export default useCharacters

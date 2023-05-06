@@ -2,12 +2,13 @@ import './SearchBar.css'
 
 type SearchBarProps = {
   setName: any
+  setPage: any
 }
 
-function SearchBar({ setName }: SearchBarProps) {
+function SearchBar({ setName, setPage }: SearchBarProps) {
   const handleSearchBar = (e: any) => {
-    console.log(e.target.value)
     setName(e.target.value)
+    setPage(1)
   }
 
   return (

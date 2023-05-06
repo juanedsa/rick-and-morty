@@ -5,7 +5,7 @@ import './App.css'
 import { HomePage } from './pages/home/HomePage'
 import { DetailPage } from './pages/detail/DetailPage'
 import { NotFoundPage } from './pages/notFound/NotFoundPage'
-import { Header } from './shared/components/Header'
+import { Header } from './shared/components/header/Header'
 
 function App() {
   return (

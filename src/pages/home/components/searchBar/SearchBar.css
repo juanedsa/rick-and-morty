@@ -1,6 +1,7 @@
 .search-bar__input {
-    width: 300px;
-    padding: 12px 12px;
-    margin-bottom: 24px;
-    border-radius: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  width: 300px;
+  padding: 12px 12px;
+  margin-bottom: 24px;
+  border-radius: 24px;
 }
