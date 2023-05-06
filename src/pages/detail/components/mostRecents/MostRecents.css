@@ -1,0 +1,35 @@
+.most-recents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.most-recents__title {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.most-recents__container {
+  display: flex;
+  gap: 5px;
+}
+
+.most-recent__character {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .most-recent__character {
+    width: 100px;
+    height: 100px;
+  }
+
+  .most-recents__container {
+    display: flex;
+    gap: 12px;
+  }
+}
