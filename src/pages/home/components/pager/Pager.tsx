@@ -1,3 +1,5 @@
+import { InfoModel } from '../../../../models/info.model'
+
 import './Pager.css'
 
 type PagerProps = {

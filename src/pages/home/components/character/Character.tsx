@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom'
+
 import './Character.css'
 
 export type CharacterProps = {
@@ -17,8 +19,14 @@ function Character({
   species,
   origin
 }: CharacterProps) {
+  const navigate = useNavigate()
+
+  const gotoDetail = () => {
+    navigate(`/detail/${id}`)
+  }
+
   return (
-    <article key={id} className="character">
+    <article key={id} className="character" onClick={gotoDetail}>
       <img className="character__image" src={image} alt={`image of ${name}`} />
       <div className="character__info">
         <span className="info__name">{name}</span>

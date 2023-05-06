@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import { API } from '../constants/url-contants'
+import { InfoModel } from '../models/info.model'
 
 import useApiData from './useApiData'
 

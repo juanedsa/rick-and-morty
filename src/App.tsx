@@ -10,8 +10,8 @@ import { Header } from './shared/components/header/Header'
 function App() {
   return (
     <main className="app-container">
-        <Header />
       <HashRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/detail/:id" element={<DetailPage />} />

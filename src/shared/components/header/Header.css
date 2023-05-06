@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 24px;
+  cursor: pointer;
 }
 
 .header__image {
