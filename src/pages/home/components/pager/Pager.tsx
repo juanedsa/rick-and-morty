@@ -11,7 +11,9 @@ function Pager({ page, setPage, info }: PagerProps) {
 
   return (
     <div className="pager">
-      <section className="pager__page">Current Page: {page} of {pages}</section>
+      <section className="pager__page">
+        Current Page: {page} of {pages}
+      </section>
       <section className="pager__buttons">
         <button
           className="button"
@@ -32,4 +34,4 @@ function Pager({ page, setPage, info }: PagerProps) {
   )
 }
 
-export default Pager
+export { Pager }

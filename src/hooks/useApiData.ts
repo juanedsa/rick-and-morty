@@ -8,10 +8,19 @@ function useApiData(url: string) {
   useEffect(() => {
     async function fetchData() {
       try {
-        let data = await fetch(url).then((res) => res.json());
+        // let data = await fetch(url).then((res) => res.json());
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log('data', data)
+
+
+
         setData(data)
         setLoading(false)
       } catch (error: any) {
+        console.log('error', error)
         setError(error)
         setLoading(false)
       }

@@ -11,6 +11,7 @@ function CharacterList({ characters }: CharacterListProps) {
     <section className="character-list">
       {characters.map(({ id, name, image, status, species, origin }) => (
         <Character
+          key={id}
           id={id}
           name={name}
           image={image}

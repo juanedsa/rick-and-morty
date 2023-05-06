@@ -4,11 +4,9 @@ import { API } from '../constants/url-contants'
 
 import useApiData from './useApiData'
 
-function useCharacters(page: number) {
+function useCharacters(page: number, name: string) {
   const [characters, setCharacters] = useState([])
   const [info, setInfo] = useState<InfoModel>({ prev: '', next: '', pages: 0 })
-
-  const name = 'rick'
 
   const url = `${API}/character/?page=${page}&name=${name}`
 

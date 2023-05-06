@@ -20,14 +20,13 @@ function Character({
   return (
     <article key={id} className="character">
       <img src={image} alt={`image of ${name}`} />
-
       <div className="character__info">
         <span className="info__name">{name}</span>
         <span>
           {status} - {species}
         </span>
         <div className="info__origin">
-          <span className="origin__title">Origen: </span>
+          <span className="origin__title">Origin:</span>
           <span>{origin.name}</span>
         </div>
       </div>
