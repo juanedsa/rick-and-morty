@@ -11,9 +11,10 @@ type MostRecentsProps = {
 function MostRecents({ recent }: MostRecentsProps) {
   const [items, setItems] = useState<Array<CharacterModel>>([])
   const navigate = useNavigate()
+  const LS_KEY = 'MOST_RECENTS'
 
   useEffect(() => {
-    const itemsLS = JSON.parse(localStorage.getItem('MOST_RECENTS') ?? '[]')
+    const itemsLS = JSON.parse(localStorage.getItem(LS_KEY) ?? '[]')
 
     if (itemsLS) {
       setItems(itemsLS)
@@ -32,7 +33,7 @@ function MostRecents({ recent }: MostRecentsProps) {
 
   useEffect(() => {
     if (items.length > 0) {
-      localStorage.setItem('MOST_RECENTS', JSON.stringify(items.slice(0, 5)))
+      localStorage.setItem(LS_KEY, JSON.stringify(items.slice(0, 5)))
     }
   }, [items])
 

@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
-import useDetail from '../../hooks/useDetail'
 import { Loading } from '../../shared/components/loading/Loading'
 import { Detail } from './components/detail/Detail'
 import { MostRecents } from './components/mostRecents/MostRecents'
+
+import useDetail from '../../hooks/useDetail'
 
 function DetailPage() {
   const { id } = useParams()

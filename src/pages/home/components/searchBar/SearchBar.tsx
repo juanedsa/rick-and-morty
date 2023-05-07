@@ -1,8 +1,8 @@
 import './SearchBar.css'
 
 type SearchBarProps = {
-  setName: any
-  setPage: any
+  setName: React.Dispatch<React.SetStateAction<string>>
+  setPage: React.Dispatch<React.SetStateAction<number>>
 }
 
 function SearchBar({ setName, setPage }: SearchBarProps) {

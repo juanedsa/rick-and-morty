@@ -1,7 +1,5 @@
 import { CharacterList } from './components/characterList/CharacterList'
 
-import './Home.css'
-
 import useCharacters from '../../hooks/useCharacters'
 import { useState } from 'react'
 import { Pager } from './components/pager/Pager'
