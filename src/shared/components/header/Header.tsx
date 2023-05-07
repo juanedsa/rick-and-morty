@@ -13,7 +13,7 @@ function Header() {
       <img
         className="header__image"
         src="/src/assets/logo.png"
-        alt="Descripción de la imagen"
+        alt="Header de la Pagina"
       />
       <figcaption>Author: Juan Salazar</figcaption>
     </figure>
